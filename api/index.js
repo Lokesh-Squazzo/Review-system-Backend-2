@@ -21,3 +21,7 @@ dbConnect();
 app.listen(PORT, () => {
   console.log("Server is running at port:", PORT);
 });
+
+app.get('/',(req,res){
+        res.send("Hello World");
+})
